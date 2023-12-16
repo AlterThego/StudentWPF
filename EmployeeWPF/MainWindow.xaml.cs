@@ -1,19 +1,19 @@
 ﻿using System.Windows;
 
-using EmployeeWPF.ViewModels;
-namespace EmployeeWPF
+using StudentWPF.ViewModels;
+namespace StudentWPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        EmployeeViewModel viewModel;
+        StudentViewModel viewModel;
 
         public MainWindow()
         {
             InitializeComponent();
-            viewModel = new EmployeeViewModel();
+            viewModel = new StudentViewModel();
             this.DataContext = viewModel;
         }
     }
