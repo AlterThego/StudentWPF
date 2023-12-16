@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MGO3RYqVYpqGOA72DNjh0fShRjsSLVrvZPg6iIQucYb/yuNixu40BoQHTpeaJWT9j0EeworKv18vPRXOaGt4FQ==",
+  "dgSpecHash": "QSlbse2fjYhKfpyQDM90SWMnL1ySQAu8VnVGqc8ytG8JOYWyQC7EHD+lX91ggkkoI2OxRBD9ZiqLGxVx3PSyWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Downloads\\Compressed\\BasicWPF-main_2\\BasicWPF-main\\EmployeeWPF\\StudentWPF.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\StudentWPF\\EmployeeWPF\\StudentWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",

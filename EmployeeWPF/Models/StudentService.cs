@@ -15,7 +15,7 @@ namespace StudentWPF.Models
         public StudentService()
         {
             ObjStudentsList = new List<Student>() { 
-                new Student{Id=100,Name="Syed",Age=25}
+                new Student{Id=69,Name="Andre",Age=21, Course="BSIT"}
             };
         }
 

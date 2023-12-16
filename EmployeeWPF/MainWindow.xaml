@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="600" Width="800"
         xmlns:vw="clr-namespace:StudentWPF.Views"
         >
     <Grid>
-        <vw:StudentView></vw:StudentView>
+        <vw:StudentView Margin="0,0,0,-101"></vw:StudentView>
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:StudentWPF.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="350" d:DesignWidth="525"
+             d:DesignHeight="600" d:DesignWidth="800"
              >
     <Grid Margin="15">
         <Grid.ColumnDefinitions>
@@ -14,6 +14,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -52,6 +54,21 @@
                     Padding="3,3,3,3" 
                     FontSize="22" FontFamily="Century Gothic" FontWeight="Bold"/>
 
+        <TextBlock  Text="Enter Course" 
+            Grid.Row="4" 
+            Grid.Column="0" 
+            Margin="5,5,5,5" 
+            Padding="3,3,3,3" 
+            FontSize="22" FontFamily="Century Gothic" FontWeight="Bold"/>
+
+        <TextBlock  Text="Enter Year" 
+     Grid.Row="5" 
+     Grid.Column="0" 
+     Margin="5,5,5,5" 
+     Padding="3,3,3,3" 
+     FontSize="22" FontFamily="Century Gothic" FontWeight="Bold"/>
+
+
         <TextBox Name="txtId" 
                  Grid.Row="1" 
                  Grid.Column="1" 
@@ -69,8 +86,22 @@
                  Margin="5,5,5,5" 
                  Padding="3,3,3,3" 
                  Text="{Binding Path=CurrentStudent.Age, Mode=TwoWay}" FontSize="24"/>
+        <TextBox Name="txtCourse" 
+         Grid.Row="4" 
+         Grid.Column="1" 
+         Margin="5,5,5,5" 
+         Padding="3,3,3,3" 
+         Text="{Binding Path=CurrentStudent.Course, Mode=TwoWay}" FontSize="24"/>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
+        <TextBox Name="txtYear" 
+ Grid.Row="5" 
+ Grid.Column="1" 
+ Margin="5,5,5,5" 
+ Padding="3,3,3,3" 
+ Text="{Binding Path=CurrentStudent.Year, Mode=TwoWay}" FontSize="24"/>
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1">
             <Button Name="btnAdd" Content="ADD" 
                     Margin="5,5,5,5" 
                     Padding="3,3,3,3" 
@@ -92,14 +123,14 @@ Command="{Binding Path=SaveCommand}"/>
         </StackPanel>
 
         <TextBlock Name="txtBlockMessage" 
-                   Grid.Row="5" 
+                   Grid.Row="7" 
                    Grid.Column="1" 
                    Margin="5,5,5,5" 
                    Padding="3,3,3,3"
                    Text="{Binding Path=Message}"/>
         <DataGrid Name="dgStudents" 
                 AutoGenerateColumns="False" 
-                Grid.Row="6" 
+                Grid.Row="8" 
                 Grid.Column="1" 
                 Margin="5,5,5,5" 
                 Padding="3,3,3,3" 
@@ -109,6 +140,8 @@ Command="{Binding Path=SaveCommand}"/>
                 <DataGridTextColumn Header="Student ID" Width="auto" Binding="{Binding Path=Id}"/>
                 <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Path=Name}"/>
                 <DataGridTextColumn Header="Age" Width="auto" Binding="{Binding Path=Age}"/>
+                <DataGridTextColumn Header="Course" Width="auto" Binding="{Binding Path=Course}"/>
+                <DataGridTextColumn Header="Year" Width="auto" Binding="{Binding Path=Year}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -38,5 +38,19 @@ namespace StudentWPF.Models
             set { age = value; OnPropertyChanged("Age"); }
         }
 
+        private string course;
+        public string Course
+        {
+            get { return course; }
+            set { course = value; OnPropertyChanged("Course"); }
+        }
+
+        private int year;
+        public int Year
+        {
+            get { return year; }
+            set { year = value; OnPropertyChanged("Year"); }
+        }
+
     }
 }
