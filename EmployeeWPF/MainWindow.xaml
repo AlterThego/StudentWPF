@@ -25,15 +25,16 @@
             <StackPanel Margin="10">
                 <TextBlock Text="About Us" Foreground="White" Margin="0,10,0,10" Cursor="Hand"/>
                 <TextBlock Text="Student Info" Foreground="White" Cursor="Hand" Height="28" MouseLeftButtonUp="StudentInfoClicked"/>
+
             </StackPanel>
         </Grid>
 
         <!-- Main Content -->
         <Grid Grid.Column="1" Margin="0,10,33,0">
             <!-- Welcome Message -->
-            <TextBlock Text="Welcome to Adios University" FontSize="24" FontWeight="Bold" Margin="20,28,36,10"/>
+            <TextBlock Text="Welcome to Adios University" FontSize="24" FontWeight="Bold" Margin="10,29,-34,489"/>
         </Grid>
-        <Grid Grid.Column="1" Margin="0,241,0,0">
+        <Grid Grid.Column="1" Margin="0,241,-15,10">
             <!-- About Us -->
             <TextBlock Text="Adios University stands as a beacon of quality education, where knowledge meets creativity, and ambition meets opportunity. Our experienced faculty members are committed to nurturing the intellectual curiosity of our students, encouraging critical thinking, and inspiring a passion for lifelong learning." Margin="20,-167,20,473"/>
 
@@ -46,7 +47,44 @@
                 <TextBlock Text="4. Community Engagement: We believe in giving back to the community. Through various outreach programs and partnerships, Adios University encourages students to be socially responsible and contribute to the betterment of society."/>
             </StackPanel>
 
-            <!-- Student Info -->
+            <WrapPanel Margin="10,10,10,-41" Orientation="Horizontal">
+                <!-- Developer 1 -->
+                <StackPanel Margin="10">
+                    <Image Source="e.jpg" Width="100" Height="100" Margin="0,0,0,5"/>
+                    <TextBlock Text="Dela Pena, Euan Mathieu" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Developer" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Developer 2 -->
+                <StackPanel Margin="10">
+                    <Image Source="jam.jpg" Width="100" Height="100" Margin="0,0,0,5"/>
+                    <TextBlock Text="Jaime, Jamie Faye" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Developer" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Developer 3 -->
+                <StackPanel Margin="10">
+                    <Image Source="d.jpg" Width="100" Height="100" Margin="0,0,0,5"/>
+                    <TextBlock Text="Soposop, Marjorie" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Developer" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Developer 4 -->
+                <StackPanel Margin="10">
+                    <Image Source="theoo.jpg" Width="100" Height="100" Margin="0,0,0,5"/>
+                    <TextBlock Text="Suaking, Theodore" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Developer" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Developer 5 -->
+                <StackPanel Margin="10">
+                    <Image Source="dre.jpg" Width="100" Height="100" Margin="0,0,0,5"/>
+                    <TextBlock Text="Timmango, Andre Joss" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Developer" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </WrapPanel>
+
+
 
         </Grid>
     </Grid>
