@@ -1,4 +1,4 @@
-﻿<Window x:Class="StudentWPF.MainWindow"
+<Window x:Class="StudentWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,9 +6,48 @@
         xmlns:local="clr-namespace:StudentWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800"
-        xmlns:vw="clr-namespace:StudentWPF.Views"
-        >
+        xmlns:vw="clr-namespace:StudentWPF.Views">
+
     <Grid>
-        <vw:StudentView Margin="0,0,0,-101"></vw:StudentView>
+        <Grid.ColumnDefinitions>
+            <!-- Sidebar Column -->
+            <ColumnDefinition Width="200"/>
+
+            <!-- Main Content Column -->
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Blue Sidebar -->
+        <Grid Background="#BC603A">
+            <!-- University Logo -->
+
+            <!-- Sidebar Menu -->
+            <StackPanel Margin="10">
+                <TextBlock Text="About Us" Foreground="White" Margin="0,10,0,10" Cursor="Hand"/>
+                <TextBlock Text="Student Info" Foreground="White" Cursor="Hand" Height="28" MouseLeftButtonUp="StudentInfoClicked"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Grid.Column="1" Margin="0,10,33,0">
+            <!-- Welcome Message -->
+            <TextBlock Text="Welcome to Adios University" FontSize="24" FontWeight="Bold" Margin="20,28,36,10"/>
+        </Grid>
+        <Grid Grid.Column="1" Margin="0,241,0,0">
+            <!-- About Us -->
+            <TextBlock Text="Adios University stands as a beacon of quality education, where knowledge meets creativity, and ambition meets opportunity. Our experienced faculty members are committed to nurturing the intellectual curiosity of our students, encouraging critical thinking, and inspiring a passion for lifelong learning." Margin="20,-167,20,473"/>
+
+            <!-- Core Values -->
+            <TextBlock Text="Core Values" FontSize="18" FontWeight="Bold" Margin="20,-125,40,439"/>
+            <StackPanel Margin="20,-91,10,10">
+                <TextBlock Text="1. Excellence: We strive for academic excellence in all our programs, equipping students with the skills and knowledge needed to thrive in a rapidly evolving world."/>
+                <TextBlock Text="2. Innovation: Adios University embraces innovation, encouraging students to think creatively and solve real-world challenges through cutting-edge research and experiential learning."/>
+                <TextBlock Text="3. Diversity and Inclusion: We celebrate diversity and foster an inclusive community where every student feels valued, respected, and supported in their academic journey."/>
+                <TextBlock Text="4. Community Engagement: We believe in giving back to the community. Through various outreach programs and partnerships, Adios University encourages students to be socially responsible and contribute to the betterment of society."/>
+            </StackPanel>
+
+            <!-- Student Info -->
+
+        </Grid>
     </Grid>
 </Window>
