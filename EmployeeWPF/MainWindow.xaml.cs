@@ -1,20 +1,28 @@
-﻿using System.Windows;
+using System;
+using System.Windows;
 
-using StudentWPF.ViewModels;
 namespace StudentWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-        StudentViewModel viewModel;
-
         public MainWindow()
         {
             InitializeComponent();
-            viewModel = new StudentViewModel();
-            this.DataContext = viewModel;
+        }
+
+        private void StudentInfoClicked(object sender, RoutedEventArgs e)
+        {
+            // Create a new window
+            Window studentWindow = new Window
+            {
+                Content = new StudentWPF.Views.StudentView(), // Assuming StudentView is the name of your UserControl
+                Title = "Student Information",
+                Height = 600,
+                Width = 800
+            };
+
+            // Show the new window
+            studentWindow.Show();
         }
     }
 }
